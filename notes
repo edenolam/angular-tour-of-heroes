@@ -45,3 +45,6 @@ When selectedHero is undefined, the ngIf removes the hero detail from the DOM. T
 
 When the user picks a hero, selectedHero has a value and ngIf puts the hero detail into the DOM.
 
+
+[hero]="selectedHero" is an Angular property binding.
+
