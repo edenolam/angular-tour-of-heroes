@@ -1,0 +1,39 @@
+angular
+
+Interpolation is the insertion of variable content from the component into the view.
+
+
+A user clicks on a button
+The button triggers an event
+The event invokes a method in the component
+The component responds by updating a value
+The updated value is displayed in the view
+
+
+A model is a container that holds a variable's value. A model is accessible in a component and its associated view.
+
+ngModel allows you to type in a field and watch the value of that variable be updated instantly as you type.
+
+Déconstruisons comment ngModel fonctionne réellement.
+
+1. L'utilisateur tape dans un champ, puis le contenu de ce champ est stocké DIRECTEMENT dans le ngModel appelé "username".
+2. La variable "username", qui est stockée dans un ngModel, est stockée dans le composant.
+3. La vue, qui est constamment à l'écoute des modifications apportées au ngModel, met à jour le nom d'utilisateur pour être ce que l'utilisateur a tapé.
+
+Tout cela se produit instantanément.
+
+Un modèle peut être considéré comme un simple conteneur qui stocke des informations. Il existe une quantité considérable de théorie sur ce que cela implique. Beaucoup a été écrit sur les modèles MVC (model-view-controller) et MVVM (Model-View ViewModel). Sans trop se perdre dans la théorie, on peut simplement dire qu'un modèle est une représentation de données de domaine. Une autre façon de dire cela, dans le front-end, le modèle est un conteneur qui stocke des variables.
+
+Lorsque nous avons tapé dans le champ de saisie, le contenu du champ de saisie était immédiatement stocké dans la variable de nom d'utilisateur.
+
+
+
+*****Sending Hard Coded Data to a Service*******
+1 : user clicks a button to add new data to an array
+2 : event is triggered in component that sends data to the service
+3 : service receives message and adds an item to its array
+4 : service returns array to component
+5 : component displays updated data in the view
+
+[(ngModel)] is Angular's two-way data binding syntax.
+
