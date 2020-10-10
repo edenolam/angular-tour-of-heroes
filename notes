@@ -48,3 +48,11 @@ When the user picks a hero, selectedHero has a value and ngIf puts the hero deta
 
 [hero]="selectedHero" is an Angular property binding.
 
+
+
+ La méthode subscribe () transmet le tableau émis au callback, qui définit la propriété heroes du composant.
+
+ Angular will inject the singleton MessageService into that property when it creates the HeroService.
+
+This is a typical "service-in-service" scenario:
+you inject the MessageService into the HeroService which is injected into the HeroesComponent.
