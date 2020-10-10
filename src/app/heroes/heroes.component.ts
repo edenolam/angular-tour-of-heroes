@@ -16,7 +16,7 @@ export class HeroesComponent implements OnInit {
   heroes: Hero[];
 
   constructor(private heroService: HeroService, private messageService: MessageService) { }
-
+  // The component's ngOnInit lifecycle hook calls the HeroService method, not the constructor.
   ngOnInit(): void {
     this.getHeroes();
   }
