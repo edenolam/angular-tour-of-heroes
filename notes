@@ -56,3 +56,15 @@ When the user picks a hero, selectedHero has a value and ngIf puts the hero deta
 
 This is a typical "service-in-service" scenario:
 you inject the MessageService into the HeroService which is injected into the HeroesComponent.
+
+--flat puts the file in src/app instead of its own folder.
+--module=app tells the CLI to register it in the imports array of the AppModule.
+
+
+The method is called forRoot() because you configure
+the router at the application's root level.
+The forRoot() method supplies the service providers and directives
+needed for routing, and performs
+the initial navigation based on the current browser URL.
+
+The RouterOutlet is one of the router directives that became available to the AppComponent because AppModule imports AppRoutingModule which exported RouterModule. The ng generate command you ran at the start of this tutorial added this import because of the --module=app flag. If you manually created app-routing.module.ts or used a tool other than the CLI to do so, you'll need to import AppRoutingModule into app.module.ts and add it to the imports array of the NgModule.
